@@ -480,7 +480,12 @@ programs = {
        {
            "url":"https://github.com/nlohmann/json",
            "commands":[os.path.join(PARSERS_DIR, "test_nlohmann_json_20190718/bin/test_nlohmann_json")]
-       }
+       },
+   "Guile GSON":
+       {
+           "url":"https://github.com/ayys/gson",
+           "commands":[os.path.join(PARSERS_DIR, "test_Guile_GSON.scm")]
+       },
 }
 
 def run_tests(restrict_to_path=None, restrict_to_program=None):
